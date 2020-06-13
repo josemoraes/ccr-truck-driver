@@ -1,0 +1,146 @@
+{
+  "drivers": [
+    {
+      "name": "Fernando Cruz",
+      "cpf": "99999999999",
+      "plate": "AAA1B23",
+      "password": "123456",
+      "term": true,
+      "id": "1"
+    }
+  ],
+  "support-points": [
+    {
+      "logo": "https://i.pinimg.com/originals/d6/05/b4/d605b4f8c5d1c6ae20dc353ef9f091bd.png",
+      "name": "Oficina Central",
+      "address": "Avenida Maia, 1950, Centro - Londrina, PR",
+      "phone": "43999999999",
+      "latitude": "-23.553728",
+      "longitude": "-51.461650",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "logo": "https://i.pinimg.com/originals/d6/05/b4/d605b4f8c5d1c6ae20dc353ef9f091bd.png",
+      "name": "Borracharia Porto 24h",
+      "address": "Rua Castro Alves, 198, Centro - Londrina, PR",
+      "phone": "43999999999",
+      "latitude": "-23.553728",
+      "longitude": "-51.461650"
+    },
+    {
+      "id": "3",
+      "logo": "https://i.pinimg.com/originals/d6/05/b4/d605b4f8c5d1c6ae20dc353ef9f091bd.png",
+      "name": "Hotel Vianna",
+      "address": "Rua Jaime Pedroso, 200, Centro - Londrina, PR",
+      "phone": "43999999999",
+      "latitude": "-23.553728",
+      "longitude": "-51.461650"
+    },
+    {
+      "id": "1dfd3940-ad68-11ea-b5bc-05f6a9859c08",
+      "logo": "https://i.pinimg.com/originals/d6/05/b4/d605b4f8c5d1c6ae20dc353ef9f091bd.png",
+      "name": "Oficina Central",
+      "address": "Avenida Maia, 1950, Centro - Londrina, PR",
+      "phone": "43999999999",
+      "latitude": "-23.553728",
+      "longitude": "-51.461650"
+    }
+  ],
+  "news": [
+    {
+      "title": "Este é o título da noticia",
+      "post_date": "01/01/2020",
+      "url": "http://www.grupoccr.com.br/imprensa/release",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Este é o título da noticia",
+      "post_date": "02/02/2020",
+      "url": "http://www.grupoccr.com.br/imprensa/release"
+    },
+    {
+      "id": "3",
+      "title": "Este é o título da noticia",
+      "post_date": "11/03/2020",
+      "url": "http://www.grupoccr.com.br/imprensa/release"
+    },
+    {
+      "id": "dbd573d0-ad66-11ea-b5bc-05f6a9859c08",
+      "title": "Este é o título da noticia",
+      "post_date": "01/01/2020",
+      "url": "http://www.grupoccr.com.br/imprensa/release"
+    }
+  ],
+  "alerts": [
+    {
+      "id": "1",
+      "date": "01/01/2020 01:53",
+      "cpf": "99999999999",
+      "alert_code": 2,
+      "title": "ROUBO",
+      "latitude": "-23.553728",
+      "longitude": "-51.461650",
+      "driver": {
+        "id": "1",
+        "name": "Fernando Cruz",
+        "cpf": "99999999999",
+        "plate": "AAA1B23",
+        "password": "123456",
+        "term": true
+      }
+    },
+    {
+      "id": "2",
+      "date": "01/02/2020 02:35",
+      "cpf": "99999999999",
+      "alert_code": 1,
+      "title": "SAÚDE",
+      "latitude": "-23.553728",
+      "longitude": "-51.461650",
+      "driver": {
+        "id": "1",
+        "name": "Fernando Cruz",
+        "cpf": "99999999999",
+        "plate": "AAA1B23",
+        "password": "123456",
+        "term": true
+      }
+    },
+    {
+      "id": "3",
+      "date": "01/03/2020 21:50",
+      "cpf": "99999999999",
+      "alert_code": 3,
+      "title": "ACIDENTE",
+      "latitude": "-23.553728",
+      "longitude": "-51.461650",
+      "driver": {
+        "id": "1",
+        "name": "Fernando Cruz",
+        "cpf": "99999999999",
+        "plate": "AAA1B23",
+        "password": "123456",
+        "term": true
+      }
+    },
+    {
+      "id": "8f0d3ba0-ad66-11ea-b5bc-05f6a9859c08",
+      "date": "01/01/2020 01:53",
+      "cpf": "99999999999",
+      "alert_code": 2,
+      "title": "ROUBO",
+      "latitude": "-23.553728",
+      "longitude": "-51.461650",
+      "driver": {
+        "id": "1",
+        "name": "Fernando Cruz",
+        "cpf": "99999999999",
+        "plate": "AAA1B23",
+        "password": "123456",
+        "term": true
+      }
+    }
+  ]
+}
