@@ -58,6 +58,18 @@
       "alert_codes_that_attends": [
         5
       ]
+    },
+    {
+      "logo": "https://i.pinimg.com/originals/d6/05/b4/d605b4f8c5d1c6ae20dc353ef9f091bd.png",
+      "name": "Delegacia da Polícia Militar",
+      "address": "Avenida Maia, 1950, Centro - Apucarana, PR",
+      "phone": "190",
+      "latitude": "-23.553728",
+      "longitude": "-51.461650",
+      "alert_codes_that_attends": [
+        2
+      ],
+      "id": "71d9afc0-ade1-11ea-b5bc-05f6a9859c08"
     }
   ],
   "news": [

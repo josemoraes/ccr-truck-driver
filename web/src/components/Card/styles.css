@@ -1,0 +1,47 @@
+.card {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card.active {
+  background-color: #ccc;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-avatar {
+  padding: 15px 20px 15px 5px;
+  text-align: left;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.card .card-header span.occurrence-date {
+  font-size: 0.9em;
+}
+
+.card-body p strong {
+  font-size: 0.75em;
+}
+.card-body > div {
+  margin-top: 10px;
+}

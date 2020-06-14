@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #303949;
+  padding: 0 30px;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+}
+
+header .left-content img {
+  width: 120px;
+}
+
+header .right-content ul li {
+  list-style: none;
+  padding: 0;
+}
+
+header .right-content ul li a {
+  padding: 0 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s all ease;
+}
+header .right-content ul li a:hover {
+  color: #f57c00;
+}
