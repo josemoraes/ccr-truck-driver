@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  NavigationPage.HasNavigationBar="False"
+                  x:Class="truckapp01.Views.MenuPage">
+
+    <MasterDetailPage.Master>
+
+        <ContentPage Title="Menu">
+
+            <Grid BackgroundColor="#303949">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" BackgroundColor="Black">
+                    
+                    <StackLayout Orientation="Horizontal" Padding="0,20,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                       <Grid Grid.Row="0" Grid.Column="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="60"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="60"/>
+                            </Grid.ColumnDefinitions>
+                            <Frame Grid.Row="0" Grid.Column="0" Padding="5" CornerRadius="30" BorderColor="Transparent" >
+                                <Label Text="FC" TextColor="Gray" FontSize="30" HorizontalOptions="Start" />
+                            </Frame>
+                        </Grid>
+                        <StackLayout Margin="10,0,0,0">
+                            <Label Text="Fernando Cruz" TextColor="White" FontSize="22" HorizontalOptions="Start" />
+                            <Label Text="PLACA: AAA1B00" TextColor="#B5B5B5" FontAttributes="Bold" FontSize="14" HorizontalOptions="Start" />
+                        </StackLayout>
+                        
+                    </StackLayout>
+                </Grid>
+
+                <StackLayout Grid.Row="1" Spacing="15">
+                    <ListView x:Name="lstMenu" RowHeight="60" BackgroundColor="Transparent" SeparatorColor="Black" ItemTapped="OnMenuItemTapped">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>                                      
+                                    <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal" Padding="20,10,0,10" Spacing="20">
+                                        <Image Source="{Binding Icon}" WidthRequest="30" HeightRequest="30" VerticalOptions="Center" />
+                                        <Label Text="{Binding Title}" FontSize="16" VerticalOptions="Center" TextColor="#B5B5B5"/>
+                                    </StackLayout>                                                                       
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+
+            </Grid>
+
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>

@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{88F0627F-3534-4F51-9A3C-4B0F66903EFB}|Default">
+  <MonoDevelop.Ide.ItemProperties.truckapp01.Android AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.99e8e19" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="truckapp01" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.truckapp01.iOS FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

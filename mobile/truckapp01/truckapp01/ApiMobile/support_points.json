@@ -1,0 +1,51 @@
+﻿[
+    {
+      "id": "1",
+      "logo": "https://i.pinimg.com/originals/d6/05/b4/d605b4f8c5d1c6ae20dc353ef9f091bd.png",
+      "name": "Apucarana Auto Peças",
+      "address": "R. Guarapuava, 316 - Centro, Apucarana - PR, 86800-250",
+      "phone": "4330334912",
+      "latitude": "-23.550454",
+      "longitude": "-51.466516",
+      "alert_codes_that_attends": [
+        4
+      ]
+    },
+    {
+      "id": "2",
+      "logo": "https://i.pinimg.com/originals/d6/05/b4/d605b4f8c5d1c6ae20dc353ef9f091bd.png",
+      "name": "Borracharia Prudentina",
+      "address": "R. Firman Neto, 708 - Jardim Apucarana, Apucarana - PR, 86808-020",
+      "phone": "4334245857",
+      "latitude": "-23.545967",
+      "longitude": "-51.447805",
+      "alert_codes_that_attends": [
+        4
+      ]
+    },
+    {
+      "id": "1dfd3940-ad68-11ea-b5bc-05f6a9859c08",
+      "logo": "https://i.pinimg.com/originals/d6/05/b4/d605b4f8c5d1c6ae20dc353ef9f091bd.png",
+      "name": "Eletro Mecânica Bidoia",
+      "address": "Avenida Maia, 1950, Centro - Apucarana, PR",
+      "phone": "43303007589",
+      "latitude": "-23.547067",
+      "longitude": "-51.448577",
+      "alert_codes_that_attends": [
+        4
+      ]
+    },
+    {
+      "id": "c776bdb0-ad78-11ea-b5bc-05f6a9859c08",
+      "logo": "https://i.pinimg.com/originals/d6/05/b4/d605b4f8c5d1c6ae20dc353ef9f091bd.png",
+      "name": "Delegacia da Mulher",
+      "address": "R. Prof. Erasto Gaertner, 786 - Centro, Apucarana - PR, 86800-710",
+      "phone": "4334230972",
+      "latitude": "-23.557517",
+      "longitude": "-51.462163",
+      "alert_codes_that_attends": [
+        5
+      ]
+    }
+  ]
+

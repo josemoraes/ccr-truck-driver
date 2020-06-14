@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
+             Title="Cadastre-se"
+             BackgroundColor="#E8EAF6"
+             x:Class="truckapp01.Views.RegisterPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="checkmark" Text="Salvar" Clicked="Salvar_Clicked" />
+    </ContentPage.ToolbarItems>
+
+
+   <Grid Margin="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+      
+        <xfx:XfxEntry Grid.Row="0" Placeholder="Nome" PlaceholderColor="Gray" FontSize="16"/>
+        <xfx:XfxEntry Grid.Row="1" Placeholder="CPF" PlaceholderColor="Gray" Keyboard="Numeric" FontSize="16" TextChanged="MaskCpf"/>
+        <xfx:XfxEntry Grid.Row="2" Placeholder="Placa do caminhão" PlaceholderColor="Gray" Keyboard="Default" FontSize="16"/>
+        <xfx:XfxEntry Grid.Row="3" Placeholder="Telefone Celular" PlaceholderColor="Gray" Keyboard="Numeric" FontSize="16" MaxLength="11" TextChanged="MaskPhone"/>
+        <xfx:XfxEntry Grid.Row="4" Placeholder="Senha" IsPassword="True" PlaceholderColor="Gray" FontSize="16"/>
+
+        <Button Grid.Row="5" Text="TERMO DE PRIVACIDADE"/>
+
+        <StackLayout Grid.Row="6" Orientation="Horizontal">
+            <CheckBox Color="#18A75C" />
+            <Label Text="Concordo com os termos de privacidade" VerticalOptions="Center"/>
+        </StackLayout>
+        
+    </Grid>
+
+
+</ContentPage>

@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.847" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms.InputKit" Version="3.3.1" />
+    <PackageReference Include="Xamarin.Forms.GoogleMaps" Version="3.3.0" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.1.0.442" />
+    <PackageReference Include="Xamarin.Forms.OpenWhatsApp" Version="1.0.1" />
+    <PackageReference Include="Xamarin.Forms.Maps" Version="4.6.0.847" />
+    <PackageReference Include="Xfx.Controls" Version="1.2.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Models\" />
+    <Folder Include="Views\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Util\" />
+    <Folder Include="ApiMobile\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ApiMobile\support_points.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="MainPage.xaml">
+      <LogicalName>truckapp01.MainPage.xaml</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ApiMobile\support_points.json" />
+  </ItemGroup>
+</Project>

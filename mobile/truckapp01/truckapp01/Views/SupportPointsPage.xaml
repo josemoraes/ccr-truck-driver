@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Pontos de Apoio"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             x:Class="truckapp01.Views.SupportPointsPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="ccrlogobranca" />
+    </ContentPage.ToolbarItems>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <maps:Map Grid.Row="0" Grid.Column="0" x:Name="Mapa" />
+
+            <StackLayout x:Name="BackgroundPopupInformacoes" Grid.Row="0" Grid.Column="0" IsVisible="false" BackgroundColor="Black" Opacity="0.8"/>
+
+            <StackLayout x:Name="PopupInformacoes" Grid.Row="0" Grid.Column="0" IsVisible="false">
+
+                <Frame BackgroundColor="WhiteSmoke" Margin="20" VerticalOptions="CenterAndExpand" CornerRadius="10">
+                    <StackLayout>
+
+                        <Image Source="ccrlogo" HeightRequest="100"/>
+                        <Label x:Name="lblName" HorizontalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                        <BoxView HeightRequest="0.5" Color="#303949" Margin="10,10,10,0"/>
+                        <StackLayout Margin="10,10,0,10">
+                            <Label Text="Endereço:" TextColor="#F57C00"/>
+                            <Label x:Name="lblAdress"/>
+                        </StackLayout>
+
+                        <Button Text="Solicitar este Apoio?" FontSize="14" FontAttributes="Bold" BackgroundColor="#F57C00" TextColor="White" CornerRadius="10" Clicked="GetSupport_Clicked" />
+
+                        <Grid HorizontalOptions="Center" Margin="0,20,0,0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="80"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"/>
+                            </Grid.ColumnDefinitions>
+                       
+                            <Button Grid.Row="0" Grid.Column="0" Text="Fechar" FontSize="12" BackgroundColor="#303949" TextColor="White" Clicked="ClosePopUpInformacoes_Clicked" CornerRadius="40"/>
+
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+
+        </Grid>
+    
+</ContentPage>

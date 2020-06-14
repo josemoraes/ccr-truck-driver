@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xfx="clr-namespace:Xfx;assembly=Xfx.Controls"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#E8EAF6"
+             BackgroundImageSource="background"
+             x:Class="truckapp01.Views.LoginPage">
+
+    <Grid Padding="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Source="nova_logo" HeightRequest="90" HorizontalOptions="Center" VerticalOptions="Center"/>
+        <xfx:XfxEntry Grid.Row="1" x:Name="txtCpf" Placeholder="seu cpf" PlaceholderColor="#F57C00" TextColor="White" FontSize="16" Keyboard="Numeric" TextChanged="MaskCpf"/>
+
+        <Grid Grid.Row="2">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="28" />
+                </Grid.ColumnDefinitions >
+
+                <Image x:Name="imgEye" Grid.Row="0" Grid.Column="1" Source="eye32" HorizontalOptions="End" VerticalOptions="Center"  HeightRequest="28">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="ShowPass" NumberOfTapsRequired="1" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <xfx:XfxEntry Grid.Row="0" Grid.Column="0" x:Name="txtPassword" Placeholder="sua senha" PlaceholderColor="#F57C00" TextColor="White" FontSize="16" IsPassword="True"/>
+
+            </Grid>
+
+        <Button Grid.Row="3" FontSize="14" Text="acessar" Clicked="Login_Clicked" BackgroundColor="WhiteSmoke" CornerRadius="30" TextColor="#303949"/>
+        <Button Grid.Row="4" Text="esqueci minha senha" TextColor="White" FontSize="14" Clicked="ResetPassword_Clicked" BackgroundColor="Transparent" Margin="0,0,0,20"/>
+        <Button Grid.Row="5" Grid.Column="0" Text="CADASTRE-SE AQUI!" FontAttributes="Bold" FontSize="14" TextColor="#F57C00" Clicked="Register_Clicked" BackgroundColor="Transparent" VerticalOptions="Center" />
+        
+    </Grid>
+
+</ContentPage>
